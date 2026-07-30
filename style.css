@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#686287;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.wrapper{
+    width:760px;
+    height:430px;
+    display:flex;
+    background:#221d36;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.left-panel{
+    width:38%;
+    position:relative;
+    background:#2d2742;
+}
+
+.bg-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:.45;
+}
+
+.logo{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+}
+
+.back-btn{
+    position:absolute;
+    top:18px;
+    right:18px;
+    color:#fff;
+    text-decoration:none;
+    font-size:11px;
+    border:1px solid #fff;
+    border-radius:20px;
+    padding:5px 10px;
+}
+
+.bottom-text{
+    position:absolute;
+    left:20px;
+    bottom:25px;
+    color:#fff;
+}
+
+.bottom-text h2{
+    font-size:20px;
+    line-height:28px;
+}
+
+.slider{
+    margin-top:12px;
+}
+
+.slider span{
+    display:inline-block;
+    width:8px;
+    height:4px;
+    background:#888;
+    border-radius:10px;
+    margin-right:5px;
+}
+
+.slider .active{
+    width:24px;
+    background:#fff;
+}
+
+.right-panel{
+    width:62%;
+    padding:25px 35px;
+    color:#fff;
+}
+
+.right-panel h1{
+    font-size:30px;
+    margin-bottom:5px;
+}
+
+.login-text{
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:18px;
+}
+
+.login-text a{
+    color:#8366ff;
+    text-decoration:none;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+}
+
+.input-box{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.input-box input{
+    width:100%;
+    height:40px;
+    background:#37304f;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+    padding:0 14px;
+    outline:none;
+}
+
+.password{
+    position:relative;
+}
+
+.password i{
+    position:absolute;
+    right:15px;
+    top:13px;
+    color:#aaa;
+    cursor:pointer;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+    color:#bbb;
+    margin:8px 0 15px;
+}
+
+.checkbox a{
+    color:#8366ff;
+}
+
+.create-btn{
+    width:100%;
+    height:42px;
+    border:none;
+    border-radius:8px;
+    background:#7c5cff;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.divider{
+    text-align:center;
+    color:#999;
+    font-size:12px;
+    margin:12px 0;
+}
+
+.social{
+    display:flex;
+    gap:10px;
+}
+
+.social button{
+    flex:1;
+    height:38px;
+    border:none;
+    border-radius:8px;
+    background:#37304f;
+    color:#fff;
+    cursor:pointer;
+}
+
+.social button:hover{
+    background:#4a4264;
+}

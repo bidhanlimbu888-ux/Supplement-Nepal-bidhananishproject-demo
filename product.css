@@ -1,0 +1,366 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+/* Navbar */
+
+.navbar{
+    height:65px;
+    background:#000;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+}
+
+.logo i{
+    font-size:20px;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+}
+
+.right-icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.right-icons a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.right-icons i{
+    border:1px solid #666;
+    padding:10px;
+    border-radius:10px;
+}
+
+.right-icons img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+/* Layout */
+
+.container{
+    display:flex;
+    padding:18px;
+    gap:20px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:290px;
+    background:#fff;
+    border:1px solid #e3e3e3;
+    border-radius:10px;
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+}
+
+.filter{
+    margin-top:30px;
+}
+
+.filter h3{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.filter input[type=text]{
+
+    width:100%;
+    height:45px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    padding-left:15px;
+    outline:none;
+}
+
+.filter label{
+    display:block;
+    margin:12px 0;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* Products */
+
+.products{
+    flex:1;
+}
+
+.top{
+    background:#fff;
+    border:1px solid #e4e4e4;
+    border-radius:10px 10px 0 0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 20px;
+}
+
+.sort{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.sort button{
+
+    padding:10px 15px;
+
+    border:1px solid #ddd;
+    background:#fff;
+
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   Product Grid
+========================= */
+
+.product-grid{
+    background:#fff;
+    border:1px solid #e4e4e4;
+    border-top:none;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+
+
+/* =========================
+   Product Card
+========================= */
+
+.card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    padding:20px;
+}
+
+.card-content{
+    padding:18px;
+    flex:1;
+}
+
+.card h3{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+.card small{
+    display:block;
+    color:#777;
+    margin-bottom:15px;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:22px;
+    font-weight:700;
+    margin:0;
+    color:#000;
+}
+
+.discount{
+    background:#111;
+    color:#fff;
+    padding:4px 10px;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:600;
+}
+/* ===========================
+   Add To Cart Button
+=========================== */
+
+.cart-btn{
+    display:block;
+    width: 95%;
+    margin:20px auto;
+    padding:14px 0;
+
+    background:#111;
+    color:#fff;
+
+    border:none;
+    border-radius:10px;
+
+    font-size:17px;
+    font-weight:700;
+
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cart-btn:hover{
+    background:#333;
+}
+/*
+
+
+
+
+.cart-btn{
+    display:block;
+    width:120px;        /* Smaller width */
+    padding:8px 12px;   /* Smaller padding */
+    margin:10px auto;
+    background:#111;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:14px;     /* Smaller text */
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cart-btn:hover{
+    background:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add To Cart Button */
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:1200px){
+
+.product-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.product-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+nav{
+    display:none;
+}
+
+}
+
+@media(max-width:600px){
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.top{
+    flex-direction:column;
+    gap:15px;
+}
+
+}
